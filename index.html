@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
+        integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .cssrow {
+            width: 100%;
+            display: flex;
+        }
+
+        .csscol1 {
+            width: 75%;
+            height: 100px;
+            background-color: blue;
+
+        }
+
+        .csscol2 {
+            width: 25%;
+            height: 100px;
+            background-color: red;
+        }
+
+        .boxcol12 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footercontent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxcol12:hover {
+            box-shadow: -3px 10px 19px -5px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -3px 10px 19px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -3px 10px 19px -5px rgba(0, 0, 0, 0.75);
+            cursor: pointer;
+        }
+
+        .bg_clip {
+            background-image: linear-gradient(to right, #05031b, #05031b);
+            background-attachment: fixed;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            color: white;
+        }
+        .footer_bg{
+            background-image: url('http://demo.wphash.com/glassesco/wp-content/uploads/2018/07/shipping_bg.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="img-fluid ml-3" src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/logo/logo1.png"
+                alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse justify-content-md-end " id="navbarNavAltMarkup">
+            <div class="navbar-nav mr-md-4 mr-sm-0">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="#">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/bg/bg-image-1.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h1">Unblievable low price</h5>
+                    <p>GLASSES FOR MEN $ WOMEN.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/bg/bg-image-8.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="h1">Unblievable low price</h5>
+                    <p>GLASSES FOR MEN $ WOMEN.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <p class="h2 text-center">LATEST EYE GLASSES</p>
+                <p class="text-center">Eye glasses are very important for thos whos have some difficult in <br /> their
+                    eye to see every hing clearly and perfectly</p>
+            </div>
+        </div>
+        <div class="row mt-md-5">
+            <div class="boxcol12 col-sm-12 col-md-3 mb-sm-5  mt-3">
+                <p>Rinosin Glasses</p>
+                <img style="max-height: 240px;max-width: 100%;"
+                    src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/product/product-1.jpg" alt="" />
+                <p class="text-center"> $35 <del>$50</del> </p>
+            </div>
+            <div class="boxcol12 col-sm-12 col-md-3 mb-sm-5 mt-3">
+                <p>Silacon Glasses</p>
+                <img style="max-height: 240px;max-width: 100%;"
+                    src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/product/product-2.jpg" alt="" />
+                <p class="text-center"> $35 <del>$50</del> </p>
+            </div>
+            <div class="boxcol12 col-sm-12 col-md-3 mb-sm-5 mt-3">
+                <p>Easin Glasses</p>
+                <img style="max-height: 240px;max-width: 100%;"
+                    src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/product/product-3.jpg" alt="" />
+                <p class="text-center"> $35 <del>$50</del> </p>
+            </div>
+            <div class="boxcol12 col-sm-12 col-md-3 mb-sm-5 mt-3">
+                <p>Macrox Glasses</p>
+                <img style="max-height: 240px;max-width: 100%;"
+                    src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/product/product-4.jpg" alt="" />
+                <p class="text-center"> $35 <del>$50</del> </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-2 px-0 ">
+                <img class="img-fluid" src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/banner/banner-1.jpg"
+                    alt="" />
+            </div>
+            <div class="col-12 col-md-4 mb-2 px-1">
+                <img class="img-fluid" src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/banner/banner-2.jpg"
+                    alt="" />
+            </div>
+            <div class="col-12 col-md-4 mb-2 px-0">
+                <img class="img-fluid" src="http://d29u17ylf1ylz9.cloudfront.net/glassesco/img/banner/banner-3.jpg"
+                    alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class=" col-12 col-md-12 ">
+                <p class="h2 text-center">NEW ARRIVLE SUNGLASSES</p>
+                <p class="text-center">Eye glasses are very important for thos whos have some difficult in <br /> their
+                    eye to see every hing clearly and perfectly</p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-12 col-md-3 boxcol12 mt-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-16-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-5-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-8-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro6-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-9-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-15-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-10-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-11-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-12-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-14-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-13-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+            <div class=" col-12 col-md-3 boxcol12 mt-md-4">
+                <p class="h5 ">Macrox Glasses</p>
+                <img style="max-height: 240px; max-width: 100%;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/06/pro-8-270x240.png" alt="" />
+                <p> $35 <del>$50</del> </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-5">
+        <div class="row ">
+            <div class="col-12 col-md-2 " style="background-color: #05031b;color: white;">
+                <p class="h5 mt-5 text-center">
+                    It’s very simple & easy
+                </p>
+                <p class="h4 mt-5">
+                    BUY OUR PRODUCTS VERY SIMPLE WAY
+                </p>
+            </div>
+            <div class="col-12 col-md-6" style="background-color: #05031b;color: white;">
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-5">
+                        <p class="h4">01. Search your glasses</p>
+                        <p class="text-center">Eye glasses are very important for thos whos have some difficult</p>
+                    </div>
+                    <div class="col-12 col-md-6 mt-5">
+                        <p class="h4">02. Customize you glasses</p>
+                        <p class="text-center">Eye glasses are very important for thos whos have some difficult</p>
+                    </div>
+                    <div class="col-12 col-md-6 mt-5">
+                        <p class="h4">03. Quickly checkout</p>
+                        <p class="text-center">Eye glasses are very important for thos whos have some difficult</p>
+                    </div>
+                    <div class="col-12 col-md-6 mt-5">
+                        <p class="h4">04. Receive your glasses</p>
+                        <p class="text-center">Eye glasses are very important for thos whos have some difficult</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 px-0">
+                <img class="img-fluid " style="max-height: 380px;"
+                    src="http://demo.wphash.com/glassesco/wp-content/uploads/2018/07/banner_4.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer_bg">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 footercontent mt-5">
+                    <p class="h4">Los Angeles</p>
+                    <hr style="width: 30%;">
+                    <p>254 Roselen de Square
+                        Century Street, <br/>Haven Tower
+                        Los Angeles, USA </p>
+                    <p>info@example.com <br />
+                        www.example.com</p>
+                </div>
+                <div class="col-12 col-md-4 footercontent mt-5">
+                    <p class="h4">Manchester</p>
+                    <hr style="width: 30%;">
+                    <p>254 Roselen de Square
+                        Century Street,<br/> Haven Tower
+                        Los Angeles, USA </p>
+                    <p>info@example.com <br />
+                        www.example.com</p>
+                </div>
+                <div class="col-12 col-md-4 footercontent mt-5">
+                    <p class="h4">Abu Dhabi</p>
+                    <hr style="width: 50%;">
+                    <p>254 Roselen de Square
+                        Century Street,<br/> Haven Tower
+                        Los Angeles, USA </p>
+                    <p>info@example.com <br />
+                        www.example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid" style="background-color: black;color: gray;">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <p class="text-center">Copyright © 2020 LAYANI GLASSES. All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
